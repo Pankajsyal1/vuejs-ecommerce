@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --primary: #770015;
+  --primaryHover: #770016d2;
+  /* --border: #E0DFDE; */
+  --border: #E6E6E6;
+  --danger: #F00;
+  --secondary: #1C1C1C;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.border-primary-light {
+  border-color: #FFC7D1 !important;
+}
+
+
+.bg-light {
+  background: #F5F4F2 !important;
+}
+
+.ff-secondary {
+  font-family: 'Playfair Display', serif;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-danger {
+  color: var(--danger) !important;
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+
+.size-button {
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--border);
+  font-size: 14px;
+  background: #fff;
+
+  &:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+
+  @media (max-width: 767px) {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+}
+
+
+.btn-primary {
+  text-transform: uppercase;
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primaryHover);
+  --bs-btn-hover-border-color: var(--primaryHover);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-bg: var(--primaryHover);
+  --bs-btn-active-border-color: var(--primaryHover);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-bg: var(--primary);
+  --bs-btn-disabled-border-color: var(--primary);
+}
